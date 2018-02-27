@@ -1,7 +1,11 @@
-output "main_role_name" {
+output "role_name" {
   value = "${aws_iam_role.main_role.name}"
 }
 
-output "main_role_id" {
+output "role_id" {
   value = "${aws_iam_role.main_role.id}"
+}
+
+output "role_arn" {
+  value = "${aws_iam_role.main_role.arn}"
 }
