@@ -12,7 +12,7 @@ data "aws_iam_policy_document" "main_assume_role_policy" {
 
 resource "aws_iam_role" "main_role" {
   name               = "${var.name}"
-  path               = "/service/"
+  path               = "/"
   assume_role_policy = "${data.aws_iam_policy_document.main_assume_role_policy.json}"
 }
 
